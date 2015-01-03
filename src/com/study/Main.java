@@ -16,6 +16,7 @@ public class Main {
 		int Multi_result = coculator.Multi(num1, num2);
 		float Divide_result = coculator.Divide(num1, num2);
 		
+		//출력기능추가//
 		System.out.println("Add_result = " + Add_result);
 		System.out.println("Minus_result = " + Minus_result);
 		System.out.println("Multi_result = " + Multi_result);
