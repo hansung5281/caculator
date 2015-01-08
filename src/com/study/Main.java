@@ -8,12 +8,11 @@ public class Main {
 		Caculator caculator = new Caculator();
 		while (true) {
 			System.out.println("원하는 메뉴를 선택하세요.");
-			System.out.println("1.더하기" + "\n2.뺴기" + "\n3.곱하기" + "\n4.나누기"
-					+ "\n5.16진수변환");
+			System.out.println("1.더하기" + "\n2.뺴기" + "\n3.곱하기" + "\n4.나누기"+ "\n5.16진수변환");
 
 			Scanner scanner = new Scanner(System.in);
 			int choice = scanner.nextInt();
-			if (choice != 5) {
+			if (choice != 5 && choice != 6) {
 				System.out.println("두 수를 입력하세요.");
 				num1 = scanner.nextInt();
 				num2 = scanner.nextInt();
@@ -41,6 +40,7 @@ public class Main {
 				num1 = scanner.nextInt();
 				String toHexStringResult = caculator.toHexString(num1);
 				System.out.println("toHexStringResult = " + toHexStringResult);
+				caculator.toHexString2(num1);
 				break;
 			}
 		}
